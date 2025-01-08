@@ -1,0 +1,9 @@
+name: ItemDeleteInAll
+version: '1.0-SNAPSHOT'
+main: Kxysl1k.itemDeleteInAll.RandomRemovalPlugin
+api-version: '1.21'
+prefix: [ ItemDeleteInAll ]
+load: STARTUP
+authors: [ Kxysl1k ]
+description: Add custom command in paper 1.21
+website: https://kxysl1k.netlify.app/
