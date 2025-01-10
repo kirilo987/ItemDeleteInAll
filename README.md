@@ -1,22 +1,22 @@
-# RandomRemovalPlugin
+# Random Removal Plugin
 
-**RandomRemovalPlugin** — це плагін для Minecraft-серверів на основі Paper/Spigot, який періодично видаляє випадкові предмети з контейнерів (скринь, бочок, воронок тощо) на вашому сервері. Це може бути корисним для очищення інвентарів і підтримки оптимальної продуктивності.
+**RandomRemovalPlugin** is a Paper/Spigot-based Minecraft server plugin that periodically removes random items from containers (chests, barrels, funnels, etc.) on your server. This can be useful for cleaning up your inventory and maintaining optimal performance.
 
-## Особливості
-- Видаляє випадкову кількість предметів із контейнерів у всіх завантажених чанках.
-- Працює автоматично кожні 20 хвилин (за замовчуванням).
-- Логує дії видалення предметів у консоль для відстеження.
+## Features
+- Gives a random number of items from containers in all loaded chunks.
+- Runs automatically every 20 minutes (by default).
+- Logs item removal actions to the console for tracking.
 
-## Встановлення
-1. Завантажте файл `.jar` плагіна.
-2. Перемістіть файл у папку `plugins` вашого сервера.
-3. Запустіть або перезапустіть сервер.
-4. Перевірте, чи плагін активувався, використовуючи консоль (`RandomRemovalPlugin увімкнено.`).
+## Installation
+1. Download the plugin `.jar` file.
+2. Move the file to your server's `plugins` folder.
+3. Start or restart your server.
+4. Check if the plugin has been activated using the console (`RandomRemovalPlugin is enabled.`).
 
-## Налаштування
-На цей момент плагін не підтримує конфігураційних файлів. Однак ви можете змінити час виконання або іншу поведінку, редагуючи вихідний код:
+## Settings
+The plugin does not support configuration files at this time. However, you can change the execution time or other behavior by editing the source code:
 
-- **Частота видалення предметів:**  
-  У методі `onEnable`, змініть параметри функції `runTaskTimer`:
-  ```java
-  Bukkit.getScheduler().runTaskTimer(this, this::removeRandomItems, 0L, 20L * 60 * 20);
+- **Item removal frequency:**
+In the `onEnable` method, change the parameters of the `runTaskTimer` function:
+```java
+Bukkit.getScheduler().runTaskTimer(this, this::removeRandomItems, 0L, 20L * 60 * 20);
