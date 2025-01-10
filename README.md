@@ -1,4 +1,4 @@
-# Random Removal Plugin
+# Random Remove Item
 
 **RandomRemovalPlugin** is a Paper/Spigot-based Minecraft server plugin that periodically removes random items from containers (chests, barrels, funnels, etc.) on your server. This can be useful for cleaning up your inventory and maintaining optimal performance.
 
